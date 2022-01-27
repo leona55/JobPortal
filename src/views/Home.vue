@@ -26,7 +26,7 @@ export default {
           smoothieCoverPhoto: "2",
         },
         {
-          title: "This is a Filler Title!",
+          title: "This is a Filler Title2!",
           smoothieHTML: "This is a filler smoothie post title!",
           smoothieCoverPhoto: "3",
         },
