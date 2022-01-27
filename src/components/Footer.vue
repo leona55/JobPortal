@@ -6,7 +6,7 @@
           <router-link class="header" :to="{ name: 'home' }">Smoothies</router-link>
           <ul>
             <li>
-              <a href="#"><youtube class="svg-icon" /></a>
+              <a href="#"><youTube class="svg-icon" /></a>
             </li>
             <li>
               <a href="#"><twitter class="svg-icon" /></a>
@@ -36,6 +36,10 @@
 </template>
 
 <script>
+import youTube from "../assets/Icons/youtube-brands.svg";
+import twitter from "../assets/Icons/twitter-brands.svg";
+import instagram from "../assets/Icons/instagram-brands.svg";
+import linkedin from "../assets/Icons/youtube-brands.svg";
 export default {};
 </script>
 
