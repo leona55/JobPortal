@@ -10,15 +10,24 @@
         </div>
       </div>
     </div>
+    <div class="updates">
+      <div class="container">
+        <h2>Never miss a post. Register for your free account today!</h2>
+        <router-link class="router button" to="#">
+          Register for Smoothies <Arrow class="arrow arrow-light"/>
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import SmoothiePost from "../components/SmoothiePost.vue";
 import SmoothieCard from "../components/SmoothieCard.vue";
+import Arrow from "../assets/Icons/arrow-right-light.svg";
 export default {
   name: "Home",
-  components: {SmoothiePost, SmoothieCard},
+  components: {SmoothiePost, SmoothieCard, Arrow},
   data() {
     return {
       welcomeScreen: {
@@ -58,6 +67,19 @@ export default {
     font-weight: 300;
     font-size: 28px;
     margin-bottom: 32px;
+  }
+}
+
+.updates{
+  .container{
+    padding: 100px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media(min-width: 800px){
+      padding: 125px 25px;
+      flex-direction: row;
+    }
   }
 }
 
