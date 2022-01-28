@@ -154,7 +154,8 @@ export default {
 
 .no-user:first-child{
     .smoothie-content{
-        background-color: rgb(201, 199, 193);
+       // background-color: rgb(201, 199, 193);
+        background-color: rgb(106, 105, 112);
         color: #fff;
     }
 }
