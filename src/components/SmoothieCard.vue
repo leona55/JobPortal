@@ -140,7 +140,7 @@ export default {
           transition: 0.5s ease-in all;
 
           &:hover{
-              color: rgba(48, 48, 48, 0.8);
+             color: rgba(48, 48, 48, 0.8);
           }
 
           .arrow{

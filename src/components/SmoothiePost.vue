@@ -154,8 +154,8 @@ export default {
 
 .no-user:first-child{
     .smoothie-content{
-       // background-color: rgb(201, 199, 193);
-        background-color: rgb(106, 105, 112);
+       // background-color: rgb(106, 105, 112);
+       background-image: linear-gradient(to right, #a1a195, #948b85, #807877, #696668, #555555);
         color: #fff;
     }
 }
@@ -169,7 +169,7 @@ export default {
 
 .no-user:nth-child(3){
     .smoothie-content{
-       background-color: rgb(59, 58, 65);
+      background-image: linear-gradient(to right, #a1a195, #8a827b, #6d6565, #4e4b4d, #333333);
         color: #fff;
     }
 }
