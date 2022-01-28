@@ -29,9 +29,13 @@ export default {
         },
         set(payload){
             this.$store.commit("toggleEditPost", payload);
-        }
-    }
+        },
+    },
   },
+
+  beforeDestroy(){
+      
+  }
 };
 </script>
 
