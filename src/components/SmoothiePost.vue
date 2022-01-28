@@ -162,6 +162,7 @@ export default {
 .no-user:nth-child(2){
     .smoothie-content{
   background-color: rgb(211, 211, 169);
+   box-shadow: oldlace;
         color: #fff;
     }
 }
