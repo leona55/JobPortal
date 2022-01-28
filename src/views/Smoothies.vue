@@ -34,7 +34,7 @@ export default {
   },
 
   beforeDestroy(){
-      
+      this.$store.state.commit("toggleEditPost", false);
   }
 };
 </script>
