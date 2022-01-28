@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 export default {
   name: "app",
-  components: {Navigation, Footer},
+  components: { Navigation, Footer },
   data() {
     return {};
   },
@@ -56,17 +56,42 @@ export default {
   color: #fff;
 }
 
-.arrow{
+.arrow {
   margin-left: 8px;
   width: 12px;
-  path{
+  path {
     fill: #303030;
   }
 }
 
-.arrow-light{
-  path{
+.arrow-light {
+  path {
     fill: #fff;
+  }
+}
+
+.smoothie-card-wrap {
+  position: relative;
+  padding: 80px 16px;
+  background-color: #f1f1f1;
+  @media (min-width: 500px) {
+    padding: 100px 16px;
+  }
+
+  .smoothie-cards {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
 </style>

@@ -6,7 +6,7 @@
       <div class="container">
         <h3>View More Recent Smoothies</h3>
         <div class="smoothie-cards">
-          <SmoothieCard v-for="(post, index) in sampleSmoothieCards" :key="index" />
+          <SmoothieCard :post="post" v-for="(post, index) in sampleSmoothieCards" :key="index" />
         </div>
       </div>
     </div>

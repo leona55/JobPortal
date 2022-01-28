@@ -154,22 +154,21 @@ export default {
 
 .no-user:first-child{
     .smoothie-content{
-        background-color: rgb(150, 150, 153);
+        background-color: rgb(201, 199, 193);
         color: #fff;
     }
 }
 
 .no-user:nth-child(2){
     .smoothie-content{
-        box-shadow: 0 10px 6px -10px rgb(26, 24, 24), 0 10px 4px -5px rgba(19, 15, 15, 0.6);
-  background-color: rgb(57, 55, 63);
+  background-color: rgb(211, 211, 169);
         color: #fff;
     }
 }
 
 .no-user:nth-child(3){
     .smoothie-content{
-       background-color: #1e1c24;
+       background-color: rgb(59, 58, 65);
         color: #fff;
     }
 }
