@@ -23,6 +23,14 @@ export default {
     sampleSmoothieCards() {
       return this.$store.state.sampleSmoothieCards;
     },
+    editPost: {
+        get(){
+            return this.$store.state.editPost;
+        },
+        set(payload){
+            this.$store.commit("toggleEditPost", payload);
+        }
+    }
   },
 };
 </script>
