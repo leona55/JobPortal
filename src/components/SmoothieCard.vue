@@ -63,7 +63,7 @@ export default {
 
     .icon {
       display: flex;
-      justify-content: content;
+      justify-content: center;
       align-items: center;
       width: 35px;
       height: 35px;
@@ -93,6 +93,55 @@ export default {
           width: auto;
       }
     }
+  }
+
+  img{
+      display: block;
+      border-radius: 8px 8px 0 0;
+      z-index: 1;
+      width: 100%;
+      min-height: 200px;
+      object-fit: cover;
+  }
+
+  .info{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      z-index: 3;
+      padding: 32px 16px;
+      color: #000;
+
+      h4{
+          padding-bottom: 8px;
+          font-size: 20px;
+          font-weight: 300;
+      }
+
+      h6{
+          font-weight: 400;
+          font-size: 12px;
+          padding-bottom: 16px;
+      }
+
+      .link{
+          display: inline-flex;
+          align-items: center;
+          margin-top: auto;
+          font-weight: 500;
+          padding-top: 20px;
+          font-size: 12px;
+          padding-bottom: 4px;
+          transition: 0.5s ease-in all;
+
+          &:hover{
+              color: rgba(48, 48, 48, 0.8);
+          }
+
+          .arrow{
+              width: 10px;
+          }
+      }
   }
 }
 </style>
