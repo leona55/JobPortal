@@ -31,6 +31,12 @@ export default {
           smoothieCoverPhoto: "3",
         },
       ],
+      sampleSmoothieCards: [
+        {smoothieTitle: "Smoothie Card #1", smoothieCoverPhoto: "smoothie-1", smoothieDate: "January 28, 2022"},
+        {smoothieTitle: "Smoothie Card #2", smoothieCoverPhoto: "smoothie-2", smoothieDate: "January 28, 2022"},
+        {smoothieTitle: "Smoothie Card #3", smoothieCoverPhoto: "smoothie-3", smoothieDate: "January 28, 2022"},
+        {smoothieTitle: "Smoothie Card #4", smoothieCoverPhoto: "smoothie-4", smoothieDate: "January 28, 2022"},
+      ],
     };
   },
 };

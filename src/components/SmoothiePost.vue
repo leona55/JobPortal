@@ -1,5 +1,5 @@
 <template>
-  <div class="smoothie-wrapper">
+  <div class="smoothie-wrapper no-user">
     <div class="smoothie-content">
       <div>
         <h2 v-if="post.welcomeScreen">{{ post.title }}</h2>
@@ -9,7 +9,7 @@
         <router-link class="link link-light" v-if="post.welcomeScreen" to="#">
           Login/Register<Arrow class="arrow arrow-light" />
         </router-link>
-        <router-link class="link link-light" v-else to="#">
+        <router-link class="link" v-else to="#">
           View The Post<Arrow class="arrow" />
         </router-link>
       </div>
@@ -109,7 +109,7 @@ export default {
           transition: .5s ease-in all;
 
           &:hover {
-              border-bottom-color: #303030;
+              border-bottom-color: #fff;
           }
       }
 
@@ -141,5 +141,37 @@ export default {
         object-fit: cover;
     }
   }
+
+  &:nth-child(even){
+      .smoothie-content{
+          order: 2;
+      }
+      .smoothie-photo{
+          order: 1;
+      }
+  }
 }
+
+.no-user:first-child{
+    .smoothie-content{
+        background-color: rgb(150, 150, 153);
+        color: #fff;
+    }
+}
+
+.no-user:nth-child(2){
+    .smoothie-content{
+        box-shadow: 0 10px 6px -10px rgb(26, 24, 24), 0 10px 4px -5px rgba(19, 15, 15, 0.6);
+  background-color: rgb(57, 55, 63);
+        color: #fff;
+    }
+}
+
+.no-user:nth-child(3){
+    .smoothie-content{
+       background-color: #1e1c24;
+        color: #fff;
+    }
+}
+
 </style>

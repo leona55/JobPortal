@@ -49,10 +49,24 @@ export default {
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: #303030;
 }
 
 .link-light {
   color: #fff;
+}
+
+.arrow{
+  margin-left: 8px;
+  width: 12px;
+  path{
+    fill: #303030;
+  }
+}
+
+.arrow-light{
+  path{
+    fill: #fff;
+  }
 }
 </style>
