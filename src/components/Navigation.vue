@@ -8,7 +8,7 @@
       </div>
       <div class="nav-links">
         <ul v-show="!mobile">
-          <router-link class="link" to="#">Home</router-link>
+          <router-link class="link" :to="{ name: 'Home' }">Home</router-link>
           <router-link class="link" :to="{name:'Smoothies'}">Smoothies</router-link>
           <router-link class="link" to="#">Create recipe</router-link>
           <router-link class="link" to="#">Login/Register</router-link>
