@@ -52,6 +52,7 @@ export default {
   background-color: #fff;
   min-height: 420px;
   transition: 0.5s ease all;
+  //comment
 
   &:hover {
     transform: rotateZ(-1deg) scale(1.01);
