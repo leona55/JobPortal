@@ -100,7 +100,6 @@ export default {
       }
     }
   }
-  //comment
 
   img{
       display: block;
