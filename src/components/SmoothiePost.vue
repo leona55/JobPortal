@@ -17,13 +17,21 @@
     <div class="smoothie-photo">
       <img
         v-if="post.welcomeScreen"
+<<<<<<< HEAD
         :src="require(`../assets/SmoothiePhotos/${post.photo}.jpg`)"
+=======
+        :src="require(`../assets/smoothiePhotos/${post.photo}.jpg`)"
+>>>>>>> 20de8b96667258fc1697d19ea2bac3f1c90fec1e
         alt=""
       />
       <img
         v-else
         :src="
+<<<<<<< HEAD
           require(`../assets/SmoothiePhotos/${post.smoothieCoverPhoto}.jpg`)
+=======
+          require(`../assets/smoothiePhotos/${post.smoothieCoverPhoto}.jpg`)
+>>>>>>> 20de8b96667258fc1697d19ea2bac3f1c90fec1e
         "
         alt=""
       />
@@ -42,7 +50,10 @@ export default {
 };
 </script>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 20de8b96667258fc1697d19ea2bac3f1c90fec1e
 <style lang="scss" scoped>
 .smoothie-wrapper {
   display: flex;
