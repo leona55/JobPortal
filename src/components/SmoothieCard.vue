@@ -101,6 +101,7 @@ export default {
     }
   }
 //comment
+//comment2
   img{
       display: block;
       border-radius: 8px 8px 0 0;
