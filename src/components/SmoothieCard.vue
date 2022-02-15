@@ -102,6 +102,7 @@ export default {
 //comment
 //comment2
 //comment3
+//comment4
   img{
       display: block;
       border-radius: 8px 8px 0 0;
