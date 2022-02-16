@@ -13,6 +13,24 @@
           <router-link class="link" to="#">Create recipe</router-link>
           <router-link class="link" :to="{name:'Login'}">Login/Register</router-link>
         </ul>
+        <div class ="profile" ref="profile">
+          <span>{{ this.$store.state.profileInitials }} </span>
+          <div class="profile-menu">
+            <div class="info">
+              <p class="initials">{{this.$store.state.profileInitials }}</p>
+              <div class="right">
+                <p>{{this.$store.state.profileFirstName}} {{this.$store.state.profileLastName}}</p>
+                <p>{{this.$store.state.profileUserName}}</p>
+                <p>{{this.$store.state.profileEmail}}</p>
+              </div>
+            </div>
+           <div class ="options">
+             <div class="option">
+               <router-link class="option" to ="#"></router-link>
+             </div>
+           </div>
+          </div>
+        </div>
       </div>
     </nav>
     <menuIcon @click="toggleMobileNav" class="menu-icon" v-show="mobile" />
@@ -67,9 +85,10 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: #fff;
+  background-color: #E3AFBC;
   padding: 0 25px;
-  box-shadow: 0 4px 2px -1px rgb(255, 255, 255), 0 2px 4px -1px rgba(243, 243, 243, 0.6);
+  box-shadow: 0 4px 2px -1px #fff
+(255, 255, 255), 0 2px 4px -1px rgba(243, 243, 243, 0.6);
   z-index: 99;
 
   .link {

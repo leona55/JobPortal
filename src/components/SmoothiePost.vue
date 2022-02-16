@@ -154,14 +154,14 @@ export default {
 
 .no-user:first-child{
     .smoothie-content{
-       background-image: linear-gradient(to right, #a1a195, #948b85, #807877, #696668, #555555);
+       background-image: linear-gradient(to right, #D8BFD8, #D8BFD8, #D8BFD8, #D8BFD8, #D8BFD8);
         color: #fff;
     }
 }
 
 .no-user:nth-child(2){
     .smoothie-content{
-  background-color: rgb(211, 211, 169);
+  background-color: #8FBC8F;
    box-shadow: oldlace;
         color: #fff;
     }
@@ -169,7 +169,7 @@ export default {
 
 .no-user:nth-child(3){
     .smoothie-content{
-      background-image: linear-gradient(to right, #a1a195, #8a827b, #6d6565, #4e4b4d, #333333);
+      background-image: linear-gradient(to right, #FFB6C1, #FFB6C1, #FFB6C1, #FFB6C1, #FFB6C1);
         color: #fff;
     }
 }

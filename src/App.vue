@@ -11,6 +11,9 @@
 <script>
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import firebase from "firebase/app";
+import "firebase/auth";
+
 export default {
   name: "app",
   components: { Navigation, Footer },
@@ -20,7 +23,17 @@ export default {
     };
   },
   created() {
+
+    firebase.auth().onAuthStateChanged((user) => {
+      this.$store.commit("updateUser",user);
+      if(user){
+        this.$store.dispatch("getCurrentUser");
+        console.log(this.$store.state.profileEmail);
+      }
+    })
     this.checkRoute();
+    
+    
   },
   mounted() {},
   methods: {
@@ -97,7 +110,7 @@ button,
   cursor: pointer;
   margin-top: 24px;
   padding: 12px 24px;
-  background-color: #303030;
+  background-color: #FFB6C1;
   color: #fff;
   border-radius: 20px;
   border: none;
@@ -141,11 +154,17 @@ button,
   cursor: none !important;
   background-color: rgba(128, 128, 128, 0.5) !important;
 }
+.error {
+  text-align: center;
+  font-size:  12px;
+  color: red;
+}
+
 
 .smoothie-card-wrap {
   position: relative;
   padding: 80px 16px;
-  background-color: #f1f1f1;
+  background-color: #FFE4E1;
   @media (min-width: 500px) {
     padding: 100px 16px;
   }
