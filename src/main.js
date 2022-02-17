@@ -9,7 +9,7 @@ import "firebase/auth";
 Vue.use(Vue2Editor);
 
 Vue.config.productionTip = false;
-//new comment
+
 let app;
 firebase.auth().onAuthStateChanged(() => {
 if(!app){
