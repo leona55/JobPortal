@@ -7,7 +7,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 
 Vue.use(Vue2Editor);
-//comment
+
 Vue.config.productionTip = false;
 
 let app;
