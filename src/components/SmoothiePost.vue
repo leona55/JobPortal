@@ -17,13 +17,21 @@
     <div class="smoothie-photo">
       <img
         v-if="post.welcomeScreen"
+<<<<<<< HEAD
         :src="require(`../assets/SmoothiePhotos/${post.photo}.jpg`)"
+=======
+        :src="require(`../assets/smoothiePhotos/${post.photo}.jpg`)"
+>>>>>>> 047ca5620f496c77eb6f21d0b1b62de2e32911fd
         alt=""
       />
       <img
         v-else
         :src="
+<<<<<<< HEAD
           require(`../assets/SmoothiePhotos/${post.smoothieCoverPhoto}.jpg`)
+=======
+          require(`../assets/smoothiePhotos/${post.smoothieCoverPhoto}.jpg`)
+>>>>>>> 047ca5620f496c77eb6f21d0b1b62de2e32911fd
         "
         alt=""
       />
@@ -154,7 +162,11 @@ export default {
 
 .no-user:first-child{
     .smoothie-content{
+<<<<<<< HEAD
        background-image: linear-gradient(to right, #D8BFD8, #D8BFD8, #D8BFD8, #D8BFD8, #D8BFD8);
+=======
+       background-image: linear-gradient(to right, #d8bac4, #dbbfc6, #d6b4be, #dab7c1);
+>>>>>>> 047ca5620f496c77eb6f21d0b1b62de2e32911fd
         color: #fff;
     }
 }
