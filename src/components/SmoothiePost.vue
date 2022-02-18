@@ -154,7 +154,7 @@ export default {
 
 .no-user:first-child{
     .smoothie-content{
-       background-image: linear-gradient(to right, #dbb8c3, #d6b6bc, #d8bfc4, #d6b4be, #dab7c1);
+       background-image: linear-gradient(to right, #d8bac4, #dbbfc6, #d6b4be, #dab7c1);
         color: #fff;
     }
 }
