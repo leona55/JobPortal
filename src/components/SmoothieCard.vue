@@ -9,7 +9,7 @@
       </div>
     </div>
     <img
-      :src="require(`../assets/SmoothieCards/${post.smoothieCoverPhoto}.jpg`)"
+      :src="require(`../assets/smoothieCards/${post.smoothieCoverPhoto}.jpg`)"
       alt=""
     />
     <div class="info">

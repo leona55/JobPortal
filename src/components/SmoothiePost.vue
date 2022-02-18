@@ -17,13 +17,13 @@
     <div class="smoothie-photo">
       <img
         v-if="post.welcomeScreen"
-        :src="require(`../assets/SmoothiePhotos/${post.photo}.jpg`)"
+        :src="require(`../assets/smoothiePhotos/${post.photo}.jpg`)"
         alt=""
       />
       <img
         v-else
         :src="
-          require(`../assets/SmoothiePhotos/${post.smoothieCoverPhoto}.jpg`)
+          require(`../assets/smoothiePhotos/${post.smoothieCoverPhoto}.jpg`)
         "
         alt=""
       />
@@ -154,7 +154,7 @@ export default {
 
 .no-user:first-child{
     .smoothie-content{
-       background-image: linear-gradient(to right, #D8BFD8, #D8BFD8, #D8BFD8, #D8BFD8, #D8BFD8);
+       background-image: linear-gradient(to right, #dbb8c3, #d6b6bc, #d8bfc4, #d6b4be, #dab7c1);
         color: #fff;
     }
 }
