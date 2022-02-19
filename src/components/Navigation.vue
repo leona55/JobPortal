@@ -111,8 +111,8 @@ export default {
 header {
   background-color: #E3AFBC;
   padding: 0 25px;
-  box-shadow: 0 4px 2px -1px #fff
-(255, 255, 255), 0 2px 4px -1px rgba(243, 243, 243, 0.6);
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
   z-index: 99;
 
   .link {
@@ -135,7 +135,8 @@ header {
       .header {
         font-weight: 600;
         font-size: 24px;
-        color: #000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
         text-decoration: none;
       }
     }
@@ -146,6 +147,8 @@ header {
       flex: 1;
       align-items: center;
       justify-content: flex-end;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
 
       ul {
         margin-right: 32px;
@@ -166,16 +169,17 @@ header {
           width:40px;
           height:40px;
           border-radius: 50%;
-          color:#fff;
-          background-color:#000;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: white;
         }
         .profile-menu{
           position:absolute;
           top:60px;
           right:0;
           width:250px;
-          background-color: #303030;
-          box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+          // box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)
         }
         .info{
           display:flex;
@@ -205,7 +209,8 @@ header {
     flex-direction: column;
     position: fixed;
     height: 100%;
-    background-color: #303030;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
     top: 0;
     left: 0;
 
