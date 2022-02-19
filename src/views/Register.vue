@@ -29,7 +29,9 @@
         </div>
         <div v-show="error" class ="error">{{this.errorMsg}}</div>
       </div>
+      <div id="style">
       <button @click.prevent="register">Sign Up</button>
+      </div>
       <div class="angle"></div>
     </form>
     <div class="background"></div>
@@ -103,4 +105,5 @@ export default {
         max-width: 350px;
     }
 }
+
 </style>

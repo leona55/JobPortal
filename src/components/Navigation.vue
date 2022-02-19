@@ -1,7 +1,8 @@
 <template>
   <header>
     <nav class="container">
-      <div class="branding">
+      <div class="branding" >
+        <p><img src="../assets/smoth.png" alt="This picture of soothies logo" width="70" height="60"></p>
         <router-link class="header" :to="{ name: 'Home' }"
           >Smoothies</router-link
         >
@@ -27,6 +28,22 @@
            <div class ="options">
              <div class="option">
                <router-link class="option" to ="#"></router-link>
+               <userIcon class="icon"/>
+               <p>Profile</p>
+                <!-- </router-link>  -->
+             </div>
+             <div class="option">
+               <router-link class="option" to ="#"></router-link>
+               <adminIcon class="icon"/>
+               <p>Admin</p>
+               
+                <!-- </router-link> -->
+             </div>
+             <div class="option">
+               <router-link class="option" to ="#"></router-link>
+               <signoutIcon class="icon"/>
+               <p>Sign Out</p>
+               <!-- </router-link>  -->
              </div>
            </div>
           </div>
@@ -47,11 +64,18 @@
 
 <script>
 import menuIcon from "../assets/Icons/bars-regular.svg";
+import userIcon from "../assets/Icons/user-alt-light.svg";
+import adminIcon from "../assets/Icons/user-crown-light.svg";
+import signoutIcon from "../assets/Icons/sign-out-alt-regular.svg";
+
 
 export default {
   name: "navigation",
   components: {
     menuIcon,
+    adminIcon,
+    signoutIcon,
+    userIcon
   },
   data() {
     return {
@@ -133,6 +157,33 @@ header {
         .link:last-child {
           margin-right: 0;
         }
+        .profile{
+          position:relative;
+          cursor:pointer;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          width:40px;
+          height:40px;
+          border-radius: 50%;
+          color:#fff;
+          background-color:#000;
+        }
+        .profile-menu{
+          position:absolute;
+          top:60px;
+          right:0;
+          width:250px;
+          background-color: #303030;
+          box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)
+        }
+        .info{
+          display:flex;
+          align-items: center;
+          padding:15px;
+          border-bottom:1px solid #fff;
+        }
+         
       }
     }
   }

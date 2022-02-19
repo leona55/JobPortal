@@ -68,6 +68,8 @@ export default {
 
 <style lang="scss">
 .form-wrap {
+  height:100vh;
+  background: -webkit-linear-gradient(top, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%);
   overflow: hidden;
   display: flex;
   height: 100vh;
@@ -81,7 +83,9 @@ export default {
   .login-register {
     margin-bottom: 32px;
     .router-link {
-      color:  #FFB6C1;
+      background: -webkit-linear-gradient(top, #febbbb 0%,#fe9090 45%,#ff5c5c 100%);
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
     }
   }
   form {
@@ -98,7 +102,7 @@ export default {
     h2 {
       text-align: center;
       font-size: 32px;
-      color: 	#FFB6C1;
+      background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
       margin-bottom: 40px;
       @media (min-width: 900px) {
         font-size: 40px;
@@ -132,9 +136,10 @@ export default {
     }
     .forgot-password {
       text-decoration: none;
-      color:  	#ff8093;
+     background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
       cursor: pointer;
-      font-size: 18px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
       margin: 16px 0 32px;
       border-bottom: 1px solid transparent;
       transition: 0.5s ease all;
