@@ -47,7 +47,7 @@
       
      
    
-       <h1 style="color:hotpink; text-align:center; font-family:italic;">Visit Us!</h1>
+       <h1 style="color:white; text-align:center; font-family:italic;">Visit Us!</h1>
        <hr>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755056.409775969!2d19.9872960107016!3d42.33316078699833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee0de37631f%3A0xb0c65bf8ad2fcbcc!2sMother%20Theresa%20Square!5e0!3m2!1sen!2s!4v1645208239772!5m2!1sen!2s" width="1560" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <hr>

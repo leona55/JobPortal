@@ -14,9 +14,9 @@
           <router-link class="link" to="#">Create recipe</router-link>
           <router-link class="link" :to="{name:'Login'}">Login/Register</router-link>
         </ul>
-        <div class ="profile" ref="profile">
+        <div @click="toggleProfileMenu" class ="profile" ref="profile">
           <span>{{ this.$store.state.profileInitials }} </span>
-          <div class="profile-menu">
+          <div v-show="profileMenu" class="profile-menu">
             <div class="info">
               <p class="initials">{{this.$store.state.profileInitials }}</p>
               <div class="right">
@@ -27,23 +27,23 @@
             </div>
            <div class ="options">
              <div class="option">
-               <router-link class="option" to ="#"></router-link>
+               <router-link class="option" to ="#">
                <userIcon class="icon"/>
                <p>Profile</p>
-                <!-- </router-link>  -->
+                 </router-link>  
              </div>
              <div class="option">
-               <router-link class="option" to ="#"></router-link>
+               <router-link class="option" to ="#">
                <adminIcon class="icon"/>
                <p>Admin</p>
                
-                <!-- </router-link> -->
+                </router-link> 
              </div>
              <div class="option">
-               <router-link class="option" to ="#"></router-link>
+               <router-link class="option" to ="#">
                <signoutIcon class="icon"/>
                <p>Sign Out</p>
-               <!-- </router-link>  -->
+               </router-link>  
              </div>
            </div>
           </div>
@@ -79,6 +79,7 @@ export default {
   },
   data() {
     return {
+      profileMenu:null,
       mobile: null,
       mobileNav: null,
       windownWidth: null,
@@ -103,6 +104,15 @@ export default {
     toggleMobileNav() {
         this.mobileNav = !this.mobileNav;
     },
+    toggleProfileMenu(e){
+      if(e.target===this.$refs.profile){
+         this.profileMenu===!this.profileMenu;
+
+
+      }
+      // this.profileMenu===!this.profileMenu;
+
+    }
   },
 };
 </script>
@@ -170,27 +180,78 @@ header {
           height:40px;
           border-radius: 50%;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: white;
+        background-color: #7c001f;
         }
         .profile-menu{
           position:absolute;
           top:60px;
           right:0;
           width:250px;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-          // box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)
+          background-color: #7c001f;
+          box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)
         }
-        .info{
+       
+       .info{
+         display:flex;
+         align-items:center;
+         padding: 15px;
+         border-bottom: 1px solid #fff;
+
+         .initials{
+           position:initial;
+           width:40px;
+           height:40px;
+           background-color: #fff;
+           color:#7c001f;
+           display:flex;
+           align-items: center;
+           justify-content: center;
+           border-radius: 50%;
+
+         }
+         .right{
+           flex:1;
+           margin-left: 24px;
+
+           p:nth-child(1){
+             font-size:14px;
+           }
+           p:nth-child(2),
+             p:nth-child(3){
+               font-size:12px;
+             }
+
+         }
+       }
+       }
+      .options{
+        padding:15px;
+        .option{
+          text-decoration: none;
+          color:#fff;
           display:flex;
           align-items: center;
-          padding:15px;
-          border-bottom:1px solid #fff;
+          margin-bottom: 12px;
+
+          .icon{
+            width:18px;
+            height:auto;
+          }
+           p{
+          font-size: 14px;
+          margin-left:12px;
         }
-         
+        &:last-child{
+          margin-bottom:12px;
+        }
+
+        }
+        .option:last-child{
+          margin-bottom:0px;
+        }
       }
-    }
-  }
+    
+  
 
   .menu-icon {
     cursor: pointer;
@@ -235,6 +296,8 @@ header {
 
   .mobile-nav-leave-to {
       transform: translateX(-250px);
+  }
+}
   }
 }
 </style>
