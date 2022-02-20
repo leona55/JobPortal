@@ -121,7 +121,7 @@ export default {
       // column-span: 30;
       // rows:10;
       width:100%;
-      color:hotpink;
+      color:#ffe4e1;
       background-color: aliceblue;
       border:1px solid #ffff;
     }

@@ -69,7 +69,8 @@ export default {
 <style lang="scss">
 .form-wrap {
   height:100vh;
-  background: -webkit-linear-gradient(top, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%);
+ // background: -webkit-linear-gradient(top, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%);
+ background: #ffe4e1;
   overflow: hidden;
   display: flex;
   height: 100vh;
@@ -83,8 +84,9 @@ export default {
   .login-register {
     margin-bottom: 32px;
     .router-link {
-      background: -webkit-linear-gradient(top, #febbbb 0%,#fe9090 45%,#ff5c5c 100%);
+      //background:  -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
       font-size: 20px;
+      text-decoration: none;
       font-family: 'Times New Roman', Times, serif;
     }
   }
@@ -102,7 +104,7 @@ export default {
     h2 {
       text-align: center;
       font-size: 32px;
-      background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+     // background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
       margin-bottom: 40px;
       @media (min-width: 900px) {
         font-size: 40px;
@@ -120,7 +122,7 @@ export default {
         input {
           width: 100%;
           border: none;
-          background-color: #f2f7f6;
+          background-color: #fff5f0;
           padding: 4px 4px 4px 30px;
           height: 50px;
           &:focus {
@@ -136,7 +138,7 @@ export default {
     }
     .forgot-password {
       text-decoration: none;
-     background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+     //background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
       cursor: pointer;
       font-size: 20px;
       font-family: Arial, Helvetica, sans-serif;
@@ -144,7 +146,7 @@ export default {
       border-bottom: 1px solid transparent;
       transition: 0.5s ease all;
       &:hover {
-        border-color: #303030;
+        border-color: #120fc2;
       }
     }
     .angle {
