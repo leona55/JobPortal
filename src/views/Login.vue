@@ -3,9 +3,11 @@
     <form class="login">
       <p class="login-register">
         Don't have an account?
-        <router-link class="router-link" :to="{ name: 'Register' }">Register</router-link>
+        <router-link class="router-link" :to="{ name: 'Register' }"
+          >Register</router-link
+        >
       </p>
-      <h2>Login to FireBlogs</h2>
+      <h2>Login to Smoothie</h2>
       <div class="inputs">
         <div class="input">
           <input type="text" placeholder="Email" v-model="email" />
@@ -18,8 +20,7 @@
         <div v-show="error" class="error">{{ this.errorMsg }}</div>
       </div>
       <router-link class="forgot-password" :to="{ name: 'ForgotPassword' }"
-        >Forgot your password?</router-link
-      >
+        >Forgot your password?</router-link>
       <button @click.prevent="signIn">Sign In</button>
       <div class="angle"></div>
     </form>
@@ -68,9 +69,6 @@ export default {
 
 <style lang="scss">
 .form-wrap {
-  height:100vh;
- // background: -webkit-linear-gradient(top, #efc5ca 0%,#d24b5a 50%,#ba2737 51%,#f18e99 100%);
- background: #ffe4e1;
   overflow: hidden;
   display: flex;
   height: 100vh;
@@ -81,15 +79,15 @@ export default {
   @media (min-width: 900px) {
     width: 100%;
   }
+
   .login-register {
     margin-bottom: 32px;
+
     .router-link {
-      //background:  -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
-      font-size: 20px;
-      text-decoration: none;
-      font-family: 'Times New Roman', Times, serif;
+      color: #000;
     }
   }
+
   form {
     padding: 0 10px;
     position: relative;
@@ -101,18 +99,21 @@ export default {
     @media (min-width: 900px) {
       padding: 0 50px;
     }
+
     h2 {
       text-align: center;
       font-size: 32px;
-     // background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+      color: #303030;
       margin-bottom: 40px;
       @media (min-width: 900px) {
         font-size: 40px;
       }
     }
+
     .inputs {
       width: 100%;
       max-width: 350px;
+
       .input {
         position: relative;
         display: flex;
@@ -122,13 +123,15 @@ export default {
         input {
           width: 100%;
           border: none;
-          background-color: #fff5f0;
+          background-color: #f2f7f6;
           padding: 4px 4px 4px 30px;
           height: 50px;
+
           &:focus {
             outline: none;
           }
         }
+
         .icon {
           width: 12px;
           position: absolute;
@@ -136,19 +139,21 @@ export default {
         }
       }
     }
+
     .forgot-password {
       text-decoration: none;
-     //background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);
+      color: #000;
       cursor: pointer;
-      font-size: 20px;
-      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
       margin: 16px 0 32px;
       border-bottom: 1px solid transparent;
       transition: 0.5s ease all;
+
       &:hover {
-        border-color: #120fc2;
+        border-color: #303030;
       }
     }
+
     .angle {
       display: none;
       position: absolute;
@@ -162,17 +167,17 @@ export default {
       }
     }
   }
+
   .background {
     display: none;
     flex: 2;
-    background-size:998px;
-    background-image: url("../assets/1.jpg");
+    background-size: cover;
+    background-image: url("../assets/background.png");
     width: 100%;
     height: 100%;
     @media (min-width: 900px) {
       display: initial;
     }
   }
-  
 }
 </style>

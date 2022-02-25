@@ -1,25 +1,22 @@
 <template>
-  <div class="smoothie-wrapper no-user">
+  <div class="smoothie-wrapper" :class="{ 'no-user': !user }">
     <div class="smoothie-content">
       <div>
         <h2 v-if="post.welcomeScreen">{{ post.title }}</h2>
-        <h2 v-else>{{ post.title }}</h2>
-        <p v-if="post.wlcomeScreen">{{ post.smoothiePost }}</p>
-        <p class="content-preview" v-else>{{ post.smoothieHTML }}</p>
-        <router-link class="link link-light" v-if="post.welcomeScreen" to="#">
+        <h2 v-else>{{ post.smoothieTitle }}</h2>
+        <p v-if="post.welcomeScreen">{{ post.smoothiePost }}</p>
+        <p class="content-preview" v-else v-html="post.smoothieHTML"></p>
+        <router-link class="link link-light" v-if="post.welcomeScreen" :to="{ name: 'Login' }">
           Login/Register<Arrow class="arrow arrow-light" />
         </router-link>
-        <router-link class="link" v-else to="#">
+        <router-link class="link" v-else :to="{ name: 'ViewSmoothie', params: { smoothieid: this.post.smoothieID } }">
           View The Post<Arrow class="arrow" />
         </router-link>
       </div>
     </div>
     <div class="smoothie-photo">
-      <img
-        v-if="post.welcomeScreen" :src="require(`../assets/smoothiePhotos/${post.photo}.jpg`)" alt=""
-      />
-      <img v-else :src="require(`../assets/smoothiePhotos/${post.smoothieCoverPhoto}.jpg`)" alt=""
-      />
+      <img v-if="post.welcomeScreen" :src="require(`../assets/smoothiePhotos/${post.photo}.jpg`)" alt="" />
+      <img v-else :src="post.smoothieCoverPhoto" alt="" />
     </div>
   </div>
 </template>
@@ -32,6 +29,11 @@ export default {
   components: {
     Arrow,
   },
+  computed: {
+    user() {
+      return this.$store.state.user;
+    },
+  },
 };
 </script>
 
@@ -39,8 +41,7 @@ export default {
 .smoothie-wrapper {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   @media (min-width: 700px) {
     min-height: 650px;
     max-height: 650px;
@@ -68,104 +69,86 @@ export default {
         padding: 0 24px;
       }
 
-      h2{
-          font-size: 32px;
-          font-weight: 300;
-          text-transform: uppercase;
-          margin-bottom: 24px;
-          @media(min-width: 700px){
-              font-size: 40px;
-          }
+      h2 {
+        font-size: 32px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        @media (min-width: 700px) {
+          font-size: 40px;
+        }
       }
 
-      p{
-          font-size: 15px;
-          font-weight: 300;
-          line-height: 1.7;
+      p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.7;
       }
 
       .content-preview {
-          font-size: 13px;
-          max-height: 24px;
-          width: 250px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
+        font-size: 13px;
+        max-height: 24px;
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .link {
-          display: inline-flex;
-          align-items: center;
-          margin-top: 32px;
-          padding-bottom: 4px;
-          border-bottom: 1px solid transparent;
-          transition: .5s ease-in all;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 32px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s ease-in all;
 
-          &:hover {
-              border-bottom-color: #fff;
-          }
+        &:hover {
+          border-bottom-color: pink;
+        }
       }
 
-      .link-light{
-          &:hover {
-              border-bottom-color: #ffff;
-          }
+      .link-light {
+        &:hover {
+          border-bottom-color: #ffff;
+        }
       }
     }
   }
 
   .smoothie-photo {
+    order: 1;
+    flex: 3;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    @media (min-width: 700px) {
+      order: 2;
+    }
+    @media (min-width: 800px) {
+      flex: 4;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &:nth-child(even) {
+    .smoothie-content {
+      order: 2;
+    }
+    .smoothie-photo {
       order: 1;
-      flex: 3;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-
-    @media(min-width: 700px){
-        order: 2;
-    }
-    @media(min-width: 800px){
-        flex: 4;
-    }
-
-    img{
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
   }
+}
 
-  &:nth-child(even){
-      .smoothie-content{
-          order: 2;
-      }
-      .smoothie-photo{
-          order: 1;
-      }
+.no-user:first-child {
+  .smoothie-content {
+    background-color: pink;
+    color: #fff;
   }
 }
-
-.no-user:first-child{
-    .smoothie-content{
-      // background-image: linear-gradient(to right, #D8BFD8, #D8BFD8, #D8BFD8, #D8BFD8, #D8BFD8);
-       background-image: linear-gradient(to right, #d8bac4, #dbbfc6, #d6b4be, #dab7c1);
-        color: #fff;
-    }
-}
-
-.no-user:nth-child(2){
-    .smoothie-content{
-  background-color: #8FBC8F;
-   box-shadow: oldlace;
-        color: #fff;
-    }
-}
-
-.no-user:nth-child(3){
-    .smoothie-content{
-      background-image: linear-gradient(to right, #FFB6C1, #FFB6C1, #FFB6C1, #FFB6C1, #FFB6C1);
-        color: #fff;
-    }
-}
-
 </style>

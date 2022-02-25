@@ -1,17 +1,14 @@
 <template>
   <div class="loading">
-      <span></span>
+    <span></span>
   </div>
 </template>
 
 <script>
-
-
 export default {
-   name: "loading",
+  name: "loading",
 };
 </script>
-
 
 <style lang="scss">
 .loading {

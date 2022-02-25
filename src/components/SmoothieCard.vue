@@ -1,21 +1,19 @@
 <template>
   <div class="smoothie-card">
     <div v-show="editPost" class="icons">
-      <div class="icon">
+      <div @click="editSmoothie" class="icon">
         <Edit class="edit" />
       </div>
-      <div class="icon">
+      <div @click="deletePost" class="icon">
         <Delete class="delete" />
       </div>
     </div>
-    <img
-      :src="require(`../assets/smoothieCards/${post.smoothieCoverPhoto}.jpg`)" alt=""
-    />
+    <img :src="post.smoothieCoverPhoto" alt="" />
     <div class="info">
       <h4>{{ post.smoothieTitle }}</h4>
-      <h6>Posted on: {{ post.smoothieDate }}</h6>
-      <router-link class="link" to="#">
-        Vew The Post <Arrow class="arrow" />
+      <h6>Posted on: {{ new Date(post.smoothieDate).toLocaleString("en-us", { dateStyle: "long" }) }}</h6>
+      <router-link class="link" :to="{ name: 'ViewSmoothie', params: { smoothieid: this.post.smoothieID } }">
+        View The Post <Arrow class="arrow" />
       </router-link>
     </div>
   </div>
@@ -33,7 +31,15 @@ export default {
     Edit,
     Delete,
   },
-  computed:{
+  methods: {
+    deletePost() {
+      this.$store.dispatch("deletePost", this.post.smoothieID);
+    },
+    editSmoothie() {
+      this.$router.push({ name: "EditSmoothie", params: { smoothieid: this.post.smoothieID } });
+    },
+  },
+  computed: {
     editPost() {
       return this.$store.state.editPost;
     },
@@ -51,11 +57,10 @@ export default {
   background-color: #fff;
   min-height: 420px;
   transition: 0.5s ease all;
-//commit
+
   &:hover {
     transform: rotateZ(-1deg) scale(1.01);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .icons {
@@ -76,7 +81,7 @@ export default {
       transition: 0.5s ease all;
 
       &:hover {
-        background-color: #303030;
+        background-color: pink;
 
         .edit,
         .delete {
@@ -86,69 +91,66 @@ export default {
         }
       }
 
-      &:nth-child(1){
-          margin-right: 8px;
+      &:nth-child(1) {
+        margin-right: 8px;
       }
 
       .edit,
-      .delete{
-          pointer-events: none;
-          height: 15px;
-          width: auto;
+      .delete {
+        pointer-events: none;
+        height: 15px;
+        width: auto;
       }
     }
   }
-//comment
-//comment2
-//comment3
-//comment4
-  img{
-      display: block;
-      border-radius: 8px 8px 0 0;
-      z-index: 1;
-      width: 100%;
-      min-height: 200px;
-      object-fit: cover;
+
+  img {
+    display: block;
+    border-radius: 8px 8px 0 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
   }
 
-  .info{
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      z-index: 3;
-      padding: 32px 16px;
-      color: #000;
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 3;
+    padding: 32px 16px;
+    color: black;
 
-      h4{
-          padding-bottom: 8px;
-          font-size: 20px;
-          font-weight: 300;
+    h4 {
+      padding-bottom: 8px;
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    h6 {
+      font-weight: 400;
+      font-size: 12px;
+      padding-bottom: 16px;
+    }
+
+    .link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: auto;
+      font-weight: 500;
+      padding-top: 20px;
+      font-size: 12px;
+      padding-bottom: 4px;
+      transition: 0.5s ease-in all;
+
+      &:hover {
+        color: rgba(48, 48, 48, 0.8);
       }
 
-      h6{
-          font-weight: 400;
-          font-size: 12px;
-          padding-bottom: 16px;
+      .arrow {
+        width: 10px;
       }
-
-      .link{
-          display: inline-flex;
-          align-items: center;
-          margin-top: auto;
-          font-weight: 500;
-          padding-top: 20px;
-          font-size: 12px;
-          padding-bottom: 4px;
-          transition: 0.5s ease-in all;
-
-          &:hover{
-             color: rgba(48, 48, 48, 0.8);
-          }
-
-          .arrow{
-              width: 10px;
-          }
-      }
+    }
   }
 }
 </style>

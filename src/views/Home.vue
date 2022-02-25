@@ -1,175 +1,261 @@
 <template>
   <div class="home">
-    <SmoothiePost :post="welcomeScreen" />
-    <SmoothiePost :post="post" v-for="(post, index) in sampleSmoothiePost" :key="index" />
+    <SmoothiePost v-if="!user" :post="welcomeScreen" />
+    <SmoothiePost :post="post" v-for="(post, index) in smoothiePostsFeed" :key="index" />
     <div class="smoothie-card-wrap">
       <div class="container">
-        <h3>View More Recent Smoothies</h3>
+        <h3>View More Recent Smoothie</h3>
         <div class="smoothie-cards">
-          <SmoothieCard :post="post" v-for="(post, index) in sampleSmoothieCards" :key="index" />
+          <SmoothieCard :post="post" v-for="(post, index) in smoothiePostsCards" :key="index" />
         </div>
       </div>
     </div>
-    <div class="updates">
+    <div v-if="!user" class="updates">
       <div class="container">
-        <h2>Never miss a post,<b><i>Register for your free account</i></b> today!</h2>
-        <router-link class="router-button" to="#">
-          Register for Smoothies <Arrow class="arrow arrow-light"/>
-        </router-link>
-    
+        <h2 style="color:blue;"><i>never miss a post. Register for your free account today!</i></h2>
+        <router-link class="router-button" to="#"> Register for Smoothies<Arrow class="arrow arrow-light" /> </router-link>
       </div>
     </div>
-    <div class="col-lg-5" style="background: -webkit-linear-gradient(top, rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%);">
-      
-            <h2 style="color:hotpink; text-align:center; font-size:30px;">Complaints</h2>
-            <br>
-            <div class="name">
-              <p style="margin-bottom:50px padding-right:50px; color:hotpink; font-size:17px; text-align:center;"><i>
-            <label for="name"> Send a complaint about our site What you do not like:</label>
-              </i></p>
-            <br>
-            <p style="text-align:center;">
-            <textarea name="Complaint" cols="50" rows="10" placeholder="Send a Complaint" maxlength="100" minlength="3"></textarea> 
-              <!-- Send a complaint about our site What you do not like: -->
-              </p>
-         
-            <br>
-          </div>
-          <br>
-          
-       
-            <!-- <input class="form-control" > -->
-            <input type="button" class="button " style="width:10%;color:#fff; background-color: hotpink; border:10px solid #ffff; text-align:center; margin-left:700px; border-radius:40%;" value="Submit" id ="button"  onclick='return confirm("We will try to fix the problem as soon as possible")'>
-            <hr>
-        
-        
+<div class="about-section" style="padding: 50px;
+  text-align: center;
+  background-color: gray;
+  color: white;">
+  <h1>About Us Page</h1>
+  <p>We are here to do a project with vue.js html css and hope we did it!</p>
+  <p>More info about us</p>
+
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column" style=" float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;">
+    <div class="card" style="background-color:pink; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;">
+      <img src="../assets/Team1.jpg" alt="Fortesa" width="30%" height="50%">
+      <div class="container" style=" padding: 0 16px;  clear: both;
+  display: table;">
+        <h2>Fortesa Reqica</h2>
+        <p class="title">Leader of project</p>
+        <p>Student of UBT,we are here to do a project with vue js and we did it!</p>
+        <p>fortesa@example.com</p>
+        <p><button class="button" onclick='return confirm ("phone:044-123-456")'>Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column" style=" float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;">
+    <div class="card" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px; background-color:pink;">
+      <img src="../assets/team2.jpg" alt="Albiona" width="30%" height="50%">
+      <div class="container" style=" clear: both;
+  display: table;">
+        <h2>Albiona Berisha</h2>
+        <p class="title">Web Development</p>
+        <p>Student of UBT,iam here to create a project with vue js.</p>
+        <p>albiona@example.com</p>
+        <p><button class="button" onclick='return confirm ("phone:044-123-456")'>Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column" style=" float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;">
+    <div class="card" style="background-color:pink; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;">
+      <img src="../assets/team3.jpg" alt="Leonora" width="30%" height="50%">
+      <div class="container" style=" clear: both;
+  display: table;">
+        <h2>Leonora Mavriqi</h2>
+        <p class="title">Designer</p>
+        <p>Student of UBT,iam here to create and work of project with vue js.</p>
+        <p>nora@example.com</p>
+        <p><button class="button" onclick='return confirm ("phone:044-123-456")'>Contact</button></p>
+      </div>
+     </div>
+
+    </div>
+    
+  
+      <div class="column"  style="float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;">
+    <div class="card" style="background-color:pink; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;">
+      <img src="../assets/team4.jpg" alt="Edona" width="30%" height="50%">
+      <div class="container" style="  clear: both;
+  display: table;">
+        <h2>Edona Berisha</h2>
+        <p class="title">Front end</p>
+        <p>Student of UBT,iam here to create and work of project with vue js.</p>
+        <p>edona@example.com</p>
+        <p><button class="button" onclick='return confirm ("phone:044-123-456")'>Contact</button></p>
+     </div>
      
-      
-     
-   
-       <h1 style="color:white; text-align:center; font-family:italic;">Visit Us!</h1>
-       <hr>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755056.409775969!2d19.9872960107016!3d42.33316078699833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee0de37631f%3A0xb0c65bf8ad2fcbcc!2sMother%20Theresa%20Square!5e0!3m2!1sen!2s!4v1645208239772!5m2!1sen!2s" width="1560" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    </div>
+    </div>
+    </div>
+  
+  <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755056.409775969!2d19.9872960107016!3d42.33316078699833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee0de37631f%3A0xb0c65bf8ad2fcbcc!2sMother%20Theresa%20Square!5e0!3m2!1sen!2s!4v1645208239772!5m2!1sen!2s"
+         width="1500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe><hr>
         <hr>
     
     </div>
   </div>
-  
+
+
+
 </template>
 
 <script>
-import SmoothiePost from "../components/SmoothiePost.vue";
-import SmoothieCard from "../components/SmoothieCard.vue";
+import SmoothiePost from "../components/SmoothiePost";
+import SmoothieCard from "../components/SmoothieCard";
 import Arrow from "../assets/Icons/arrow-right-light.svg";
 export default {
   name: "Home",
-  components: {SmoothiePost, SmoothieCard, Arrow},
+  components: { SmoothiePost, SmoothieCard, Arrow },
   data() {
     return {
       welcomeScreen: {
         title: "Welcome!",
         smoothiePost:
-        "Weekly smoothie recipes. Register today to never miss a post with new recipe",
+          "A smoothie or smoothy is a drink made by puréeing fruit and vegetables in a blender. A smoothie often has a liquid base such as fruit juice, dairy products, such as milk, yogurt, ice cream or cottage cheese.. Register today to never miss a post!",
         welcomeScreen: true,
-        photo: "1",
+        photo: "coding",
       },
-      sampleSmoothiePost: [
-        {
-          title: "This is a Filler Title!",
-          smoothieHTML: "This is a filler smoothie post title!",
-          smoothieCoverPhoto: "2",
-        },
-        {
-          title: "This is a Filler Title2!",
-          smoothieHTML: "This is a filler smoothie post title!",
-          smoothieCoverPhoto: "3",
-        },
-      ],
     };
   },
   computed: {
-    sampleSmoothieCards(){
-      return this.$store.state.sampleSmoothieCards;
-    }
-  }
+    smoothiePostsFeed() {
+      return this.$store.getters.smoothiePostsFeed;
+    },
+    smoothiePostsCards() {
+      return this.$store.getters.smoothiePostsCards;
+    },
+    user() {
+      return this.$store.state.user;
+    },
+  },
 };
- 
 </script>
 
 <style lang="scss" scoped>
-
-.smoothie-card-wrap{
-  h3{
+.smoothie-card-wrap {
+  h3 {
     font-weight: 300;
     font-size: 28px;
     margin-bottom: 32px;
   }
 }
 
-.updates{
-  .container{
-    background-color: whitesmoke;
-    padding: 100px 50px;
+.updates {
+  .container {
+    padding: 100px 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media(min-width: 800px){
+    @media (min-width: 800px) {
       padding: 125px 25px;
       flex-direction: row;
     }
-    #button{
-      // column-span: 30;
-      // rows:10;
-      width:100%;
-      color:#ffe4e1;
-      background-color: aliceblue;
-      border:1px solid #ffff;
-    }
-    // name{
-    //   text-align: end;
-    // }
-    .col-lg-5{
-      background: -webkit-linear-gradient(top, #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#a2daf5 83%,#bdf3fd 100%);
-    }
 
-    .router-button{
+    .router-button {
       display: flex;
       font-size: 14px;
       text-decoration: none;
-      @media(min-width: 800px){
-          margin-left: auto;
+      @media (min-width: 800px) {
+        margin-left: auto;
       }
     }
-    .name{
-    //  position:absolute;
-    //  top:0px;
-    //  right:0px;
-    padding:60px 30px;
-    margin-bottom:15px;
-    position:absolute;
 
-
-    }
-
-    h2{
+    h2 {
       font-weight: 300;
-      font-family: "Lucida Console", Courier, monospace;
-      font-size: 40px;
+      font-size: 32px;
       max-width: 425px;
-      color: #fba6e1 ;
-      
       width: 100%;
       text-align: center;
       text-transform: uppercase;
-      @media(min-width: 800px){
+      @media (min-width: 800px) {
         text-align: initial;
         font-size: 40px;
       }
-      span{
-        font-weight: 200;
-      }
     }
   }
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.column{
+  border-radius:50%;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+  }
+}
 </style>
+
+
+
+
+
