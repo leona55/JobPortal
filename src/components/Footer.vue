@@ -61,9 +61,9 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  margin-top: auto;
+  margin-top: 80px;
   padding: 100px 25px;
-  background-color: #daccce;
+  background-color: #afbdb9;
   .container {
     display: flex;
     flex-direction: column;

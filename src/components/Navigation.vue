@@ -3,7 +3,7 @@
     <nav class="container">
       <div class="branding">
        <p> <img src="../components/smoothie (3).png" width=50 height=50 /></p>
-        <router-link class="header" style="color:purple" :to="{ name: 'Home' }">Smoothie</router-link>
+        <router-link class="header" style="color:white" :to="{ name: 'Home' }">Smoothie</router-link>
       </div>
       <div class="nav-links">
         <ul v-show="!mobile">
@@ -124,7 +124,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: #daccce;
+  background-color: #afbdb9;
   padding: 0 25px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   z-index: 99;
