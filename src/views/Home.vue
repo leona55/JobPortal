@@ -8,7 +8,7 @@
     />
     <div class="smoothie-card-wrap">
       <div class="container">
-        <h3>View More Recent Smoothie</h3>
+        <h3>View More Recent Smoothies</h3>
         <div class="smoothie-cards">
           <SmoothieCard
             :post="post"
