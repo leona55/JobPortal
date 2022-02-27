@@ -21,7 +21,7 @@
       </div>
       <router-link class="forgot-password" :to="{ name: 'ForgotPassword' }"
         >Forgot your password?</router-link>
-      <button @click.prevent="signIn">Sign In</button>
+      <button @click.prevent="signIn" >Sign In</button>
       <div class="angle"></div>
     </form>
     <div class="background"></div>
@@ -76,6 +76,8 @@ export default {
   align-self: center;
   margin: 0 auto;
   width: 90%;
+  color: #3f3b3b;
+  background-color: rgb(240, 234, 228);
   @media (min-width: 900px) {
     width: 100%;
   }
@@ -84,7 +86,7 @@ export default {
     margin-bottom: 32px;
 
     .router-link {
-      color: #000;
+      color: rgb(68, 66, 66);
     }
   }
 
@@ -96,6 +98,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex: 1;
+    background-color: rgb(240, 229, 219);
     @media (min-width: 900px) {
       padding: 0 50px;
     }
@@ -103,7 +106,7 @@ export default {
     h2 {
       text-align: center;
       font-size: 32px;
-      color: #303030;
+      color: #5f5959;
       margin-bottom: 40px;
       @media (min-width: 900px) {
         font-size: 40px;
@@ -120,10 +123,11 @@ export default {
         justify-content: center;
         align-items: center;
         margin-bottom: 8px;
+        background-color: rgb(231, 218, 206);
         input {
           width: 100%;
           border: none;
-          background-color: #f2f7f6;
+          background-color: #f6f1ec;
           padding: 4px 4px 4px 30px;
           height: 50px;
 
@@ -142,7 +146,7 @@ export default {
 
     .forgot-password {
       text-decoration: none;
-      color: #000;
+      color: rgb(78, 76, 76);
       cursor: pointer;
       font-size: 14px;
       margin: 16px 0 32px;
@@ -150,14 +154,14 @@ export default {
       transition: 0.5s ease all;
 
       &:hover {
-        border-color: #303030;
+        border-color: #4e4d4d;
       }
     }
 
     .angle {
       display: none;
       position: absolute;
-      background-color: #fff;
+      background-color: rgb(228, 215, 204);
       transform: rotateZ(3deg);
       width: 60px;
       right: -30px;
@@ -172,7 +176,7 @@ export default {
     display: none;
     flex: 2;
     background-size: cover;
-    background-image: url("../assets/background.png");
+    background-image: url("../assets/bb.jpeg");
     width: 100%;
     height: 100%;
     @media (min-width: 900px) {

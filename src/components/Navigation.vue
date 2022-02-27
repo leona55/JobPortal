@@ -3,7 +3,7 @@
     <nav class="container">
       <div class="branding">
        <p> <img src="../components/smoothie (3).png" width=50 height=50 /></p>
-        <router-link class="header" style="color:white" :to="{ name: 'Home' }">Smoothie</router-link>
+        <router-link class="header" style="color:#756c61" :to="{ name: 'Home' }">Smoothie</router-link>
       </div>
       <div class="nav-links">
         <ul v-show="!mobile">
@@ -124,7 +124,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: #afbdb9;
+  background-color: #ebdecd;
   padding: 0 25px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   z-index: 99;
@@ -133,9 +133,10 @@ header {
     font-weight: 500;
     padding: 0 8px;
     transition: 0.3s color ease;
+    color: #6e675c;
 
     &:hover {
-      color: #ffffff;
+      color: #bb577d;
     }
   }
 
@@ -150,7 +151,7 @@ header {
       .header {
         font-weight: 600;
         font-size: 24px;
-        color: palevioletred;
+        color: rgb(192, 81, 118);
         text-decoration: none;
       }
     }
@@ -183,8 +184,8 @@ header {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        color: #fff;
-        background-color: pink;
+        color: rgb(2, 2, 2);
+        background-color: #e0caac;
           span {
           pointer-events: none;
         }
@@ -194,21 +195,21 @@ header {
           top: 60px;
           right: 0;
           width: 250px;
-          background-color: pink;
+          background-color: #e0caac;
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
           .info {
             display: flex;
             align-items: center;
             padding: 15px;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #a18c6d;
 
             .initials {
               position: initial;
               width: 40px;
               height: 40px;
-              background-color: #fff;
-              color: pink;
+              background-color: #c7b193;
+              color: #53493a;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -234,7 +235,7 @@ header {
             padding: 15px;
             .option {
               text-decoration: none;
-              color: #fff;
+              color: #3d372f;
               display: flex;
               align-items: center;
               margin-bottom: 12px;
@@ -279,13 +280,13 @@ header {
     flex-direction: column;
     position: fixed;
     height: 100%;
-    background-color: pink;
+    background-color: #bbae9e;
     top: 0;
     left: 0;
 
     .link {
       padding: 15px 0;
-      color: #fff;
+      color: #52483e;
     }
   }
 

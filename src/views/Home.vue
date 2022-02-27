@@ -33,7 +33,7 @@
       style="
         padding: 50px;
         text-align: center;
-        background-color: rgb(220 220 220);
+        background-color: rgb(226 225 225);
         color: #858585;
       "
     >
@@ -52,7 +52,7 @@
           <div
             class="card"
             style="
-              background-color: rgb(220 225 224);
+              background-color: rgb(236 224 215);
               box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.30);
               margin: 18px;
             "
@@ -72,7 +72,7 @@
               <p>fortesa@example.com</p>
               <p>
                 <button
-                  style="background-color:#b5c5c1; margin-bottom:10px"
+                  style="background-color:rgb(210 176 151); margin-bottom:10px"
                   class="button"
                   onclick='return confirm ("phone:044-123-456")'
                 >
@@ -92,7 +92,7 @@
             style="
               box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.30);
               margin: 18px;
-              background-color: rgb(220 225 224);
+              background-color: rgb(236 224 215);
             "
           >
             <img
@@ -107,7 +107,7 @@
               <p>albiona@example.com</p>
               <p>
                 <button
-                  style="background-color:#b5c5c1; margin-bottom:10px"
+                  style="background-color:rgb(210 176 151); margin-bottom:10px"
                   class="button"
                   onclick='return confirm ("phone:044-123-456")'
                 >
@@ -125,7 +125,7 @@
           <div
             class="card"
             style="
-              background-color: rgb(220 225 224);
+              background-color: rgb(236 224 215);
               box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.30);
               margin: 18px;
             "
@@ -142,7 +142,7 @@
               <p>nora@example.com</p>
               <p>
                 <button
-                  style="background-color:#b5c5c1; margin-bottom:10px"
+                  style="background-color:rgb(210 176 151); margin-bottom:10px"
                   class="button"
                   onclick='return confirm ("phone:044-123-456")'
                 >
@@ -160,7 +160,7 @@
           <div
             class="card"
             style="
-              background-color: rgb(220 225 224);
+              background-color: rgb(236 224 215);
               box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.30);
               margin: 18px;
             "
@@ -177,7 +177,7 @@
               <p>edona@example.com</p>
               <p>
                 <button
-                  style="background-color:#b5c5c1; margin-bottom:10px"
+                  style="background-color:rgb(210 176 151); margin-bottom:10px"
                   class="button"
                   onclick='return confirm ("phone:044-123-456")'
                 >
