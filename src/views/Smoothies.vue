@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import SmoothieCard from "../components/SmoothieCard.vue";
+import SmoothieCard from "../components/SmoothieCard";
 export default {
   name: "smoothies",
   components: { SmoothieCard },

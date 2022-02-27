@@ -124,7 +124,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: rgb(238, 130, 238);
+  background-color: pink;
   padding: 0 25px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   z-index: 99;
@@ -135,7 +135,7 @@ header {
     transition: 0.3s color ease;
 
     &:hover {
-      color: #1eb8b8;
+      color: #ffffff;
     }
   }
 
