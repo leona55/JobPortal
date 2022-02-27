@@ -63,7 +63,7 @@ export default {
 footer {
   margin-top: auto;
   padding: 100px 25px;
-  background-color: pink;
+  background-color: #daccce;
   .container {
     display: flex;
     flex-direction: column;
