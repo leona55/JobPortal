@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="smoothie-photo">
-      <img v-if="post.welcomeScreen" :src="require(`../assets/smoothiePhotos/${post.photo}.jpg`)" alt="" />
+      <img v-if="post.welcomeScreen" :src="require(`../assets/SmoothiePhotos/${post.photo}.jpg`)" alt="" />
       <img v-else :src="post.smoothieCoverPhoto" alt="" />
     </div>
   </div>
