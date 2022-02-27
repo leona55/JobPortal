@@ -92,7 +92,7 @@ export default {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-      }
+      }//@at-root
 
       .link {
         display: inline-flex;
