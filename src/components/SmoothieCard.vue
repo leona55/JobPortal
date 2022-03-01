@@ -81,7 +81,7 @@ export default {
       transition: 0.5s ease all;
 
       &:hover {
-        background-color: pink;
+        background-color: #d8c2a4;
 
         .edit,
         .delete {
