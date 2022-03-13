@@ -16,7 +16,7 @@ export default {
   z-index: 101;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: pink;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -32,7 +32,7 @@ export default {
     height: 60px;
     margin: 0 auto;
     border: 3px solid transparent;
-    border-top-color: #fff;
+    border-top-color: black;
     border-bottom-color: #fff;
     border-radius: 50%;
     animation: spin ease 1000ms infinite;

@@ -61,9 +61,9 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  margin-top: auto;
+  margin-top: 80px;
   padding: 100px 25px;
-  background-color: pink;
+  background-color: #ebdecd;
   .container {
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@ footer {
       .header {
         text-align: center;
         font-size: 24px;
-        color: #fff;
+        color: #696156;
         margin-bottom: 16px;
         text-decoration: none;
         font-weight: 600;
@@ -135,7 +135,7 @@ footer {
             .svg-icon {
               width: 24px;
               height: auto;
-              color: #fff;
+              color: #756c61;
             }
           }
         }
@@ -153,7 +153,7 @@ footer {
           .link {
             font-size: 16px;
             font-weight: 500;
-            color: #fff;
+            color: #574f45;
             text-decoration: none;
           }
         }
@@ -162,7 +162,7 @@ footer {
 
     .right {
       gap: 32px;
-      color: #fff;
+      color: pink;
       align-items: center;
       flex-direction: column;
       @media (min-width: 800px) {

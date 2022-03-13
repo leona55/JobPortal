@@ -68,6 +68,7 @@ export default {
     openPreview() {
       this.$store.commit("openPhotoPreview");
     },
+    //comment
 
     imageHandler(file, Editor, cursorLocation, resetUploader) {
       const storageRef = firebase.storage().ref();
@@ -87,6 +88,7 @@ export default {
         }
       );
     },
+    //comment is there please share our project
 
     uploadSmoothie() {
       if (this.smoothieTitle.length !== 0 && this.smoothieHTML.length !== 0) {

@@ -6,16 +6,31 @@
         <h2 v-else>{{ post.smoothieTitle }}</h2>
         <p v-if="post.welcomeScreen">{{ post.smoothiePost }}</p>
         <p class="content-preview" v-else v-html="post.smoothieHTML"></p>
-        <router-link class="link link-light" v-if="post.welcomeScreen" :to="{ name: 'Login' }">
+        <router-link
+          class="link link-light"
+          v-if="post.welcomeScreen"
+          :to="{ name: 'Login' }"
+        >
           Login/Register<Arrow class="arrow arrow-light" />
         </router-link>
-        <router-link class="link" v-else :to="{ name: 'ViewSmoothie', params: { smoothieid: this.post.smoothieID } }">
+        <router-link
+          class="link"
+          v-else
+          :to="{
+            name: 'ViewSmoothie',
+            params: { smoothieid: this.post.smoothieID },
+          }"
+        >
           View The Post<Arrow class="arrow" />
         </router-link>
       </div>
     </div>
     <div class="smoothie-photo">
-      <img v-if="post.welcomeScreen" :src="require(`../assets/smoothiePhotos/${post.photo}.jpg`)" alt="" />
+      <img
+        v-if="post.welcomeScreen"
+        :src="require(`../assets/SmoothiePhotos/${post.photo}.jpg`)"
+        alt=""
+      />
       <img v-else :src="post.smoothieCoverPhoto" alt="" />
     </div>
   </div>
@@ -41,7 +56,6 @@ export default {
 .smoothie-wrapper {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   @media (min-width: 700px) {
     min-height: 650px;
     max-height: 650px;
@@ -88,7 +102,7 @@ export default {
       .content-preview {
         font-size: 13px;
         max-height: 24px;
-        width: 250px;
+        width: 286px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -109,7 +123,7 @@ export default {
 
       .link-light {
         &:hover {
-          border-bottom-color: #ffff;
+          border-bottom-color: rgb(0, 0, 0);
         }
       }
     }
@@ -118,8 +132,6 @@ export default {
   .smoothie-photo {
     order: 1;
     flex: 3;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-
     @media (min-width: 700px) {
       order: 2;
     }
@@ -147,8 +159,8 @@ export default {
 
 .no-user:first-child {
   .smoothie-content {
-    background-color: pink;
-    color: #fff;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
 }
 </style>
