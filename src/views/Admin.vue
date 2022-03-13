@@ -72,12 +72,12 @@ export default {
         margin: 16px 0;
 
         label {
-          font-size: 13px;
+          font-size: 14px;
           display: block;
           padding-bottom: 5px;
         }
         input {
-          width: 100%;
+          width: 200%;
           border: none;
           background-color: #f2f7f6;
           padding: 8px;
