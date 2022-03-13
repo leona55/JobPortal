@@ -287,7 +287,7 @@ export default {
     .ql-container {
       display: flex;
       flex-direction: column;
-      height: 200%;
+      height: 100%;
       overflow: scroll;
     }
 
@@ -297,7 +297,7 @@ export default {
   }
 
   .smoothie-actions {
-    margin-top: 32px;
+    margin-top: 31px;
 
     button {
       margin-right: 15px;
