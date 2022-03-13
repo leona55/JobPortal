@@ -137,7 +137,7 @@ button,
 .button-light {
   background-color: transparent;
   border: 2px solid #fff;
-  color: #fff;
+  color: pink;
 }
 
 .button-inactive {
