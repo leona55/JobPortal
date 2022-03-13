@@ -191,12 +191,12 @@ export default {
     cursor: pointer;
     border-radius: 20px;
     padding: 12px 24px;
-    color: #fff;
+    color: pink;
     background-color: pink;
     text-decoration: none;
 
     &:hover {
-      background-color: rgba(48, 48, 48, 0.7);
+      background-color: pink;
     }
   }
 
@@ -287,7 +287,7 @@ export default {
     .ql-container {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      height: 200%;
       overflow: scroll;
     }
 
@@ -300,7 +300,7 @@ export default {
     margin-top: 32px;
 
     button {
-      margin-right: 16px;
+      margin-right: 15px;
     }
   }
 }

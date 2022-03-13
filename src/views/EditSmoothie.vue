@@ -21,7 +21,7 @@
         <vue-editor :editorOptions="editorSettings" v-model="smoothieHTML" useCustomImageHandler @image-added="imageHandler" />
       </div>
       <div class="smoothie-actions">
-        <button @click="updateSmoothie">Save Changes</button>
+        <button @click="updateSmoothie">Save Changess</button>
         <router-link class="router-button" :to="{ name: 'SmoothiePreview' }">Preview Changes</router-link>
       </div>
     </div>
