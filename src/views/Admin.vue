@@ -77,7 +77,7 @@ export default {
           padding-bottom: 5px;
         }
         input {
-          width: 100%;
+          width: 200%;
           border: none;
           background-color: #f2f7f6;
           padding: 8px;
