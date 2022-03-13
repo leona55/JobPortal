@@ -69,7 +69,7 @@ export default {
       }
 
       .input {
-        margin: 16px 0;
+        margin: 17px 0;
 
         label {
           font-size: 14px;
