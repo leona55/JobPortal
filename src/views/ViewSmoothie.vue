@@ -2,7 +2,7 @@
   <div class="post-view" v-if="currentSmoothie">
     <div class="container quillWrapper">
       <h2>{{ this.currentSmoothie[0].smoothieTitle }}</h2>
-      <h4>Posteed on: {{ new Date(this.currentSmoothie[0].smoothieDate).toLocaleString("en-us", { dateStyle: "long" }) }}</h4>
+      <h4>Posted on: {{ new Date(this.currentSmoothie[0].smoothieDate).toLocaleString("en-us", { dateStyle: "long" }) }}</h4>
       <img :src="this.currentSmoothie[0].smoothieCoverPhoto" alt="" />
       <div class="post-content ql-editor" v-html="this.currentSmoothie[0].smoothieHTML"></div>
     </div>
