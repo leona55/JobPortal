@@ -6,7 +6,7 @@
       <form class="reset">
         <p class="login-register">
           Back to
-          <router-link class="router-link" :to="{ name: 'Login' }">Logiin</router-link>
+          <router-link class="router-link" :to="{ name: 'Login' }">Logiiin</router-link>
         </p>
         <h2>Reset Password</h2>
         <p>Forgoot your passowrd? Enter your email to reseet it</p>
