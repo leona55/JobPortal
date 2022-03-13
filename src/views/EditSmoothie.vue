@@ -22,7 +22,7 @@
       </div>
       <div class="smoothie-actions">
         <button @click="updateSmoothie">Save Changess</button>
-        <router-link class="router-button" :to="{ name: 'SmoothiePreview' }">Preview Changes</router-link>
+        <router-link class="router-button" :to="{ name: 'SmoothiePreview' }">Preview Changees</router-link>
       </div>
     </div>
   </div>
