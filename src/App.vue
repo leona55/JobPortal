@@ -75,7 +75,7 @@ export default {
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: pink;
 }
 
 .link-light {
