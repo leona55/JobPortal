@@ -102,7 +102,7 @@ button,
   margin-top: 24px;
   padding: 12px 24px;
   background-color: #303030;
-  color: #fff;
+  color: pink;
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
