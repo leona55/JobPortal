@@ -79,7 +79,7 @@ export default {
 }
 
 .link-light {
-  color: #fff;
+  color: pink;
 }
 //git
 .arrow {
