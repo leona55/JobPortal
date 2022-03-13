@@ -72,7 +72,7 @@ export default {
         margin: 16px 0;
 
         label {
-          font-size: 14px;
+          font-size: 13px;
           display: block;
           padding-bottom: 5px;
         }
