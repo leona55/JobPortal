@@ -191,7 +191,7 @@ export default {
     cursor: pointer;
     border-radius: 20px;
     padding: 12px 24px;
-    color: #fff;
+    color: pink;
     background-color: pink;
     text-decoration: none;
 
