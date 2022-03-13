@@ -287,7 +287,7 @@ export default {
     .ql-container {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      height: 1000%;
       overflow: scroll;
     }
 
