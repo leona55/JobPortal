@@ -196,7 +196,7 @@ export default {
     text-decoration: none;
 
     &:hover {
-      background-color: rgba(48, 48, 48, 0.7);
+      background-color: pink;
     }
   }
 
