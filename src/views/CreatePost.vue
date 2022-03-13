@@ -88,6 +88,7 @@ export default {
         }
       );
     },
+    //comment is there please share our project
 
     uploadSmoothie() {
       if (this.smoothieTitle.length !== 0 && this.smoothieHTML.length !== 0) {
