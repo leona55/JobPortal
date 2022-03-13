@@ -24,7 +24,8 @@
         <h2 style="color: dark-green">
           <i>never miss a post. Register for your free account today!</i>
         </h2>
-        <router-link class="router-button" to="#">
+       
+     <router-link class="router-button" to="#">
           Register for Smoothies<Arrow class="arrow arrow-light" />
         </router-link>
       </div>
