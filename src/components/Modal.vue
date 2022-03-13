@@ -25,7 +25,7 @@ export default {
   align-items: center;
   z-index: 101;
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: 100%;
   top: 0;
   background-color: red($color: #000000);
