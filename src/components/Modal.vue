@@ -37,7 +37,7 @@ export default {
     border-radius: 8px;
     width: 300px;
     padding: 40px 30px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(234, 234, 234);
 
     p {
       text-align: center;
