@@ -136,7 +136,7 @@ button,
 
 .button-light {
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid pink;
   color: pink;
 }
 
