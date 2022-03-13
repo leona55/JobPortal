@@ -155,7 +155,7 @@ button,
 .smoothie-card-wrap {
   position: relative;
   padding: 80px 16px;
-  background-color: #f1f1f1;
+  background-color: pink;
   @media (min-width: 500px) {
     padding: 100px 16px;
   }
