@@ -297,7 +297,7 @@ export default {
   }
 
   .smoothie-actions {
-    margin-top: 32px;
+    margin-top: 31px;
 
     button {
       margin-right: 15px;
