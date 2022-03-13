@@ -9,7 +9,7 @@
           <router-link class="router-link" :to="{ name: 'Login' }">Login</router-link>
         </p>
         <h2>Reset Password</h2>
-        <p>Forgot your passowrd? Enter your email to reset it</p>
+        <p>Forgoot your passowrd? Enter your email to reset it</p>
         <div class="inputs">
           <div class="input">
             <input type="text" placeholder="Email" v-model="email" />
