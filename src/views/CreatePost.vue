@@ -300,7 +300,7 @@ export default {
     margin-top: 32px;
 
     button {
-      margin-right: 16px;
+      margin-right: 15px;
     }
   }
 }
