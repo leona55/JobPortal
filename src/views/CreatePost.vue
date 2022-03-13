@@ -68,6 +68,7 @@ export default {
     openPreview() {
       this.$store.commit("openPhotoPreview");
     },
+    //comment
 
     imageHandler(file, Editor, cursorLocation, resetUploader) {
       const storageRef = firebase.storage().ref();
