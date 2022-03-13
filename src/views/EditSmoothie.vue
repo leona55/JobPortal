@@ -12,7 +12,7 @@
           <label for="smoothie-photo">Upload Cover Photo</label>
           <input type="file" ref="smoothiePhoto" id="smoothie-photo" @change="fileChange" accept=".png, .jpg, ,jpeg" />
           <button @click="openPreview" class="preview" :class="{ 'button-inactive': !this.$store.state.smoothiePhotoFileURL }">
-            Preview Photo
+            Preview Photoo
           </button>
           <span>File Chosen: {{ this.$store.state.smoothiePhotoName }}</span>
         </div>
