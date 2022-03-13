@@ -37,7 +37,7 @@ export default {
     border-radius: 8px;
     width: 300px;
     padding: 40px 30px;
-    background-color: black;
+    background-color: pink;
 
     p {
       text-align: center;
