@@ -16,6 +16,7 @@
             :key="index"
           />
         </div>
+    
       </div>
     </div>
     <div v-if="!user" class="updates">
@@ -28,6 +29,7 @@
         </router-link>
       </div>
     </div>
+    
     <div
       class="about-section"
       style="
