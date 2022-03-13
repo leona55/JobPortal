@@ -28,8 +28,8 @@ export default {
 <style lang="scss">
 .post-view {
   h4 {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 200;
+    font-size: 15px;
     margin-bottom: 24px;
   }
 }
