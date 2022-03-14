@@ -55,7 +55,7 @@ export default {
     }
 
     .admin-info {
-      border-radius: 40px;
+      border-radius: 50px;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       padding: 30px;
       background-color: pink;
