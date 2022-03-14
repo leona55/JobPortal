@@ -44,7 +44,7 @@ export default {
 <style lang="scss" scoped>
 .admin {
   .container {
-    max-width: 1000px;
+    max-width: 100px;
     padding: 30px 40px;
 
     h2 {
