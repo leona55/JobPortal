@@ -61,7 +61,7 @@ export default {
       background-color: pink;
       display: flex;
       flex-direction: column;
-      max-width: 600px;
+      max-width: 700px;
       margin: 32px auto;
 
       span {
