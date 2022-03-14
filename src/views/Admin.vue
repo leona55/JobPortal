@@ -65,7 +65,7 @@ export default {
       margin: 32px auto;
 
       span {
-        font-size: 15px;
+        font-size: 25px;
       }
 
       .input {
