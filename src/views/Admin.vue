@@ -81,7 +81,7 @@ export default {
           border: none;
           background-color: #f2f7f6;
           padding: 8px;
-          height: 50px;
+          height: 60px;
           @media (min-width: 900px) {
           }
 
