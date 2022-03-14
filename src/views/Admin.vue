@@ -50,7 +50,7 @@ export default {
     h2 {
       text-align: center;
       margin-bottom: 30px;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 32px;
     }
 
