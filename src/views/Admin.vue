@@ -58,7 +58,7 @@ export default {
       border-radius: 90px;
       box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       padding: 50px;
-      background-color: pink;
+      background-color: red;
       display: flex;
       flex-direction: column;
       max-width: 700px;
