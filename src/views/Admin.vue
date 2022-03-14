@@ -74,7 +74,7 @@ export default {
         label {
           font-size: 14px;
           display: block;
-          padding-bottom: 8px;
+          padding-bottom: 9px;
         }
         input {
           width: 150%;
