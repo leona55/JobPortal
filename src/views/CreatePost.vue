@@ -68,6 +68,7 @@ export default {
     openPreview() {
       this.$store.commit("openPhotoPreview");
     },
+    //comment
 
     imageHandler(file, Editor, cursorLocation, resetUploader) {
       const storageRef = firebase.storage().ref();
@@ -87,6 +88,7 @@ export default {
         }
       );
     },
+    //comment is there please share our project
 
     uploadSmoothie() {
       if (this.smoothieTitle.length !== 0 && this.smoothieHTML.length !== 0) {
@@ -189,12 +191,12 @@ export default {
     cursor: pointer;
     border-radius: 20px;
     padding: 12px 24px;
-    color: #fff;
+    color: pink;
     background-color: pink;
     text-decoration: none;
 
     &:hover {
-      background-color: rgba(48, 48, 48, 0.7);
+      background-color: pink;
     }
   }
 
@@ -285,7 +287,7 @@ export default {
     .ql-container {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      height: 1000%;
       overflow: scroll;
     }
 
@@ -298,7 +300,7 @@ export default {
     margin-top: 32px;
 
     button {
-      margin-right: 16px;
+      margin-right: 15px;
     }
   }
 }

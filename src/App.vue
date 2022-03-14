@@ -75,11 +75,11 @@ export default {
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: pink;
 }
 
 .link-light {
-  color: #fff;
+  color: pink;
 }
 //git
 .arrow {
@@ -91,7 +91,7 @@ export default {
 }
 .arrow-light {
   path {
-    fill: #fff;
+    fill: pink;
   }
 }
 
@@ -102,7 +102,7 @@ button,
   margin-top: 24px;
   padding: 12px 24px;
   background-color: #303030;
-  color: #fff;
+  color: pink;
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
@@ -136,8 +136,8 @@ button,
 
 .button-light {
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid pink;
+  color: pink;
 }
 
 .button-inactive {
@@ -149,13 +149,13 @@ button,
 .error {
   text-align: center;
   font-size: 12px;
-  color: red;
+  color: pink;
 }
 
 .smoothie-card-wrap {
   position: relative;
   padding: 80px 16px;
-  background-color: #f1f1f1;
+  background-color: pink;
   @media (min-width: 500px) {
     padding: 100px 16px;
   }

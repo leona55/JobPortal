@@ -25,10 +25,10 @@ export default {
   align-items: center;
   z-index: 101;
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: 100%;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: red($color: #000000);
 
   .modal-content {
     display: flex;
@@ -37,7 +37,7 @@ export default {
     border-radius: 8px;
     width: 300px;
     padding: 40px 30px;
-    background-color: #fff;
+    background-color: rgb(234, 234, 234);
 
     p {
       text-align: center;

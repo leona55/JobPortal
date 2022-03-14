@@ -32,7 +32,7 @@ export default {
     height: 60px;
     margin: 0 auto;
     border: 3px solid transparent;
-    border-top-color: #fff;
+    border-top-color: black;
     border-bottom-color: #fff;
     border-radius: 50%;
     animation: spin ease 1000ms infinite;

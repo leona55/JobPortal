@@ -6,17 +6,17 @@
       <form class="reset">
         <p class="login-register">
           Back to
-          <router-link class="router-link" :to="{ name: 'Login' }">Login</router-link>
+          <router-link class="router-link" :to="{ name: 'Login' }">Logiiin</router-link>
         </p>
         <h2>Reset Password</h2>
-        <p>Forgot your passowrd? Enter your email to reset it</p>
+        <p>Forgoot your passowrd? Enter your email to reseet ittt</p>
         <div class="inputs">
           <div class="input">
             <input type="text" placeholder="Email" v-model="email" />
             <email class="icon" />
           </div>
         </div>
-        <button @click.prevent="resetPassword">Reset</button>
+        <button @click.prevent="resetPassword">Reeset</button>
         <div class="angle"></div>
       </form>
       <div class="background"></div>
