@@ -49,7 +49,7 @@ export default {
 
     h2 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-weight: 400;
       font-size: 32px;
     }
