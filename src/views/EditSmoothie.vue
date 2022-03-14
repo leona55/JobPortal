@@ -12,7 +12,7 @@
           <label for="smoothie-photo">Upload Cover Photo</label>
           <input type="file" ref="smoothiePhoto" id="smoothie-photo" @change="fileChange" accept=".png, .jpg, ,jpeg" />
           <button @click="openPreview" class="preview" :class="{ 'button-inactive': !this.$store.state.smoothiePhotoFileURL }">
-            Preview Photo
+            Preview Photoo
           </button>
           <span>File Chosen: {{ this.$store.state.smoothiePhotoName }}</span>
         </div>
@@ -21,8 +21,8 @@
         <vue-editor :editorOptions="editorSettings" v-model="smoothieHTML" useCustomImageHandler @image-added="imageHandler" />
       </div>
       <div class="smoothie-actions">
-        <button @click="updateSmoothie">Save Changes</button>
-        <router-link class="router-button" :to="{ name: 'SmoothiePreview' }">Preview Changes</router-link>
+        <button @click="updateSmoothie">Save Changess</button>
+        <router-link class="router-button" :to="{ name: 'SmoothiePreview' }">Preview Changees</router-link>
       </div>
     </div>
   </div>

@@ -162,7 +162,7 @@ footer {
 
     .right {
       gap: 32px;
-      color: #756c61;
+      color: pink;
       align-items: center;
       flex-direction: column;
       @media (min-width: 800px) {

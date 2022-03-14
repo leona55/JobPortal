@@ -3,7 +3,7 @@
     <div class="container">
       <h2>Administration</h2>
       <div class="admin-info">
-        <h2>Add Admin</h2>
+        <h2>Addd Admin</h2>
         <div class="input">
           <input placeholder="Enter user email to make them an admin" type="text" id="addAdmins" v-model="adminEmail" />
         </div>
@@ -44,44 +44,44 @@ export default {
 <style lang="scss" scoped>
 .admin {
   .container {
-    max-width: 1000px;
-    padding: 60px 25px;
+    max-width: 100px;
+    padding: 300px 40px;
 
     h2 {
       text-align: center;
-      margin-bottom: 16px;
-      font-weight: 300;
+      margin-bottom: 30px;
+      font-weight: 400;
       font-size: 32px;
     }
 
     .admin-info {
-      border-radius: 8px;
-      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      padding: 32px;
-      background-color: #f1f1f1;
+      border-radius: 90px;
+      box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      padding: 50px;
+      background-color: red;
       display: flex;
       flex-direction: column;
-      max-width: 600px;
+      max-width: 700px;
       margin: 32px auto;
 
       span {
-        font-size: 14px;
+        font-size: 55px;
       }
 
       .input {
-        margin: 16px 0;
+        margin: 18px 0;
 
         label {
           font-size: 14px;
           display: block;
-          padding-bottom: 6px;
+          padding-bottom: 9px;
         }
         input {
-          width: 100%;
+          width: 150%;
           border: none;
           background-color: #f2f7f6;
           padding: 8px;
-          height: 50px;
+          height: 60px;
           @media (min-width: 900px) {
           }
 
