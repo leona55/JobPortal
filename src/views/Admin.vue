@@ -45,7 +45,7 @@ export default {
 .admin {
   .container {
     max-width: 100px;
-    padding: 30px 40px;
+    padding: 300px 40px;
 
     h2 {
       text-align: center;
