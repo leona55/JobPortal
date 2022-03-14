@@ -16,7 +16,7 @@ export default {
   z-index: 101;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: pink;
   position: fixed;
   display: flex;
   justify-content: center;
